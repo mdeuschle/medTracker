@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A8DBC7861CDD3061001DE2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC7851CDD3061001DE2C5 /* AppDelegate.swift */; };
-		A8DBC7881CDD3061001DE2C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC7871CDD3061001DE2C5 /* ViewController.swift */; };
 		A8DBC78B1CDD3061001DE2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DBC7891CDD3061001DE2C5 /* Main.storyboard */; };
 		A8DBC78E1CDD3061001DE2C5 /* MedTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC78C1CDD3061001DE2C5 /* MedTracker.xcdatamodeld */; };
 		A8DBC7901CDD3061001DE2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DBC78F1CDD3061001DE2C5 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		A8DBC7821CDD3061001DE2C5 /* MedTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DBC7851CDD3061001DE2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8DBC7871CDD3061001DE2C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8DBC78A1CDD3061001DE2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8DBC78D1CDD3061001DE2C5 /* MedTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedTracker.xcdatamodel; sourceTree = "<group>"; };
 		A8DBC78F1CDD3061001DE2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,8 +97,10 @@
 		A8DBC7841CDD3061001DE2C5 /* MedTracker */ = {
 			isa = PBXGroup;
 			children = (
+				A8DBC7B81CDD3086001DE2C5 /* Model */,
+				A8DBC7B71CDD3080001DE2C5 /* Views */,
+				A8DBC7B61CDD3075001DE2C5 /* Controllers */,
 				A8DBC7851CDD3061001DE2C5 /* AppDelegate.swift */,
-				A8DBC7871CDD3061001DE2C5 /* ViewController.swift */,
 				A8DBC7891CDD3061001DE2C5 /* Main.storyboard */,
 				A8DBC78F1CDD3061001DE2C5 /* Assets.xcassets */,
 				A8DBC7911CDD3061001DE2C5 /* LaunchScreen.storyboard */,
@@ -126,6 +126,27 @@
 				A8DBC7AA1CDD3061001DE2C5 /* Info.plist */,
 			);
 			path = MedTrackerUITests;
+			sourceTree = "<group>";
+		};
+		A8DBC7B61CDD3075001DE2C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A8DBC7B71CDD3080001DE2C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A8DBC7B81CDD3086001DE2C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8DBC7881CDD3061001DE2C5 /* ViewController.swift in Sources */,
 				A8DBC78E1CDD3061001DE2C5 /* MedTracker.xcdatamodeld in Sources */,
 				A8DBC7861CDD3061001DE2C5 /* AppDelegate.swift in Sources */,
 			);
