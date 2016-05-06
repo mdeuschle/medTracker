@@ -14,6 +14,11 @@
 		A8DBC7931CDD3061001DE2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DBC7911CDD3061001DE2C5 /* LaunchScreen.storyboard */; };
 		A8DBC79E1CDD3061001DE2C5 /* MedTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC79D1CDD3061001DE2C5 /* MedTrackerTests.swift */; };
 		A8DBC7A91CDD3061001DE2C5 /* MedTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC7A81CDD3061001DE2C5 /* MedTrackerUITests.swift */; };
+		A8DBC7BB1CDD31E7001DE2C5 /* Medicine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC7B91CDD31E7001DE2C5 /* Medicine+CoreDataProperties.swift */; };
+		A8DBC7BC1CDD31E7001DE2C5 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC7BA1CDD31E7001DE2C5 /* Medicine.swift */; };
+		A8DBC7C01CDD37F3001DE2C5 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC7BF1CDD37F3001DE2C5 /* TrackViewController.swift */; };
+		A8DBC7C21CDD380C001DE2C5 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC7C11CDD380C001DE2C5 /* EditViewController.swift */; };
+		A8DBC7C41CDD385D001DE2C5 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC7C31CDD385D001DE2C5 /* ListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		A8DBC7A41CDD3061001DE2C5 /* MedTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DBC7A81CDD3061001DE2C5 /* MedTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTrackerUITests.swift; sourceTree = "<group>"; };
 		A8DBC7AA1CDD3061001DE2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8DBC7B91CDD31E7001DE2C5 /* Medicine+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Medicine+CoreDataProperties.swift"; path = "../Medicine+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A8DBC7BA1CDD31E7001DE2C5 /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Medicine.swift; path = ../Medicine.swift; sourceTree = "<group>"; };
+		A8DBC7BF1CDD37F3001DE2C5 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		A8DBC7C11CDD380C001DE2C5 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		A8DBC7C31CDD385D001DE2C5 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +141,9 @@
 		A8DBC7B61CDD3075001DE2C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A8DBC7BF1CDD37F3001DE2C5 /* TrackViewController.swift */,
+				A8DBC7C11CDD380C001DE2C5 /* EditViewController.swift */,
+				A8DBC7C31CDD385D001DE2C5 /* ListTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -145,6 +158,8 @@
 		A8DBC7B81CDD3086001DE2C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A8DBC7B91CDD31E7001DE2C5 /* Medicine+CoreDataProperties.swift */,
+				A8DBC7BA1CDD31E7001DE2C5 /* Medicine.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -280,8 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DBC7BB1CDD31E7001DE2C5 /* Medicine+CoreDataProperties.swift in Sources */,
 				A8DBC78E1CDD3061001DE2C5 /* MedTracker.xcdatamodeld in Sources */,
 				A8DBC7861CDD3061001DE2C5 /* AppDelegate.swift in Sources */,
+				A8DBC7C01CDD37F3001DE2C5 /* TrackViewController.swift in Sources */,
+				A8DBC7BC1CDD31E7001DE2C5 /* Medicine.swift in Sources */,
+				A8DBC7C21CDD380C001DE2C5 /* EditViewController.swift in Sources */,
+				A8DBC7C41CDD385D001DE2C5 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
