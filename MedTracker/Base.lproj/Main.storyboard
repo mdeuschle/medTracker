@@ -299,15 +299,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Dosage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fz-86-XtC">
-                                <rect key="frame" x="16" y="130" width="343" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ddU-kO-8qx"/>
-                                    <constraint firstAttribute="height" constant="50" id="fqV-xQ-JbQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4OF-KO-A36">
                                 <rect key="frame" x="16" y="188" width="343" height="29"/>
                                 <constraints>
@@ -319,7 +310,19 @@
                                     <segment title="Evening"/>
                                     <segment title="Bedtime"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onSegmetSelected:" destination="LFW-gM-KA5" eventType="valueChanged" id="Qjh-Z6-nha"/>
+                                </connections>
                             </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Dosage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fz-86-XtC">
+                                <rect key="frame" x="16" y="130" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ddU-kO-8qx"/>
+                                    <constraint firstAttribute="height" constant="50" id="fqV-xQ-JbQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -335,9 +338,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add" id="jAF-Rv-mH3">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="qUg-u2-tAh"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="qUg-u2-tAh">
+                            <connections>
+                                <action selector="saveTapped:" destination="LFW-gM-KA5" id="9os-wN-X9v"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addDosageTexField" destination="5fz-86-XtC" id="AxV-Ic-iI2"/>
+                        <outlet property="addMedTextField" destination="h40-av-p3M" id="P3y-bg-gGX"/>
+                        <outlet property="segmentedControl" destination="4OF-KO-A36" id="5Pi-6v-zaQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vn8-3h-DRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -345,6 +357,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gmQ-BI-VPg"/>
+        <segue reference="VeT-ok-rn8"/>
     </inferredMetricsTieBreakers>
 </document>

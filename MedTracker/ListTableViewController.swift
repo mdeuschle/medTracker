@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class ListTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
-
+    
     let moc : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
     var frc : NSFetchedResultsController = NSFetchedResultsController()
@@ -36,14 +36,17 @@ class ListTableViewController: UITableViewController, NSFetchedResultsController
         frc.delegate = self
 
         do {
-
             try frc.performFetch()
         } catch {
             return
         }
     }
 
+    // update table when new med added
 
+    func controllerDidChangeContent(controller: NSFetchedResultsController) {
+        tableView.reloadData()
+    }
 
     // MARK: - Table view data source
 
@@ -74,7 +77,7 @@ class ListTableViewController: UITableViewController, NSFetchedResultsController
 
         let med = frc.objectAtIndexPath(indexPath) as! Medicine
         cell.textLabel?.text = med.name
-        cell.detailTextLabel?.text = "\(med.dosage)mg at \(med.time)"
+        cell.detailTextLabel?.text = "\(med.dosage!)mg at \(med.time!)"
         return cell
     }
 
