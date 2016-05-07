@@ -11,23 +11,24 @@ import CoreData
 
 class EditViewController: UIViewController, UITextFieldDelegate {
 
+    var newMed : Medicine? = nil
+
+    let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+
     @IBOutlet var addMedTextField: UITextField!
     @IBOutlet var addDosageTexField: UITextField!
     @IBOutlet var segmentedControl: UISegmentedControl!
 
-    var newMed : Medicine?
     var timeToTake = "Morning"
-
-    let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if newMed != nil {
 
-            addMedTextField.text = newMed?.name
-            addDosageTexField.text = newMed?.dosage
-            timeToTake = (newMed?.time)!
+            addMedTextField.text = newMed!.name
+            addDosageTexField.text = newMed!.dosage
+            timeToTake = (newMed!.time)!
 
             if timeToTake == "Morning" {
                 segmentedControl.selectedSegmentIndex = 0

@@ -52,12 +52,14 @@ class ListTableViewController: UITableViewController, NSFetchedResultsController
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 
-        return (frc.sections?.count)!
+        let numberOfSections = frc.sections?.count
+        return numberOfSections!
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return frc.sections![section].numberOfObjects
+        let numberOfRowsInSection = frc.sections?[section].numberOfObjects
+        return numberOfRowsInSection!
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

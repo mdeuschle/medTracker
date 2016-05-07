@@ -77,12 +77,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENG-Dk-bzb">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ENG-Dk-bzb">
                                 <rect key="frame" x="16" y="91" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="Xxw-D4-jT2"/>
                                     <constraint firstAttribute="height" constant="31" id="ggU-3n-4fx"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="morningTapped:" destination="2lt-vV-Z9v" eventType="valueChanged" id="h0U-VE-Uhh"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morning" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8t-lP-4HR">
                                 <rect key="frame" x="92" y="96" width="267" height="21"/>
@@ -93,7 +96,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAN-Jw-2c0">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yAN-Jw-2c0">
                                 <rect key="frame" x="16" y="130" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="8hI-Oa-oEg"/>
@@ -101,6 +104,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="ky8-wS-giE"/>
                                     <constraint firstAttribute="width" constant="49" id="zy8-xU-AK5"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="afternoonTapped:" destination="2lt-vV-Z9v" eventType="valueChanged" id="Jev-hs-6lP"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afternoon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYs-5O-Mmv">
                                 <rect key="frame" x="92" y="135" width="77" height="21"/>
@@ -111,7 +117,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z8i-oo-dRa">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="z8i-oo-dRa">
                                 <rect key="frame" x="16" y="169" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="2V9-XG-LGR"/>
@@ -119,6 +125,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="Toy-Ba-8Ws"/>
                                     <constraint firstAttribute="height" constant="31" id="vLd-ca-JUW"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="eveningTapped:" destination="2lt-vV-Z9v" eventType="valueChanged" id="YNj-UF-fEW"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evening" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulv-UB-8Gf">
                                 <rect key="frame" x="92" y="174" width="61" height="21"/>
@@ -129,7 +138,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1j-KH-34M">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f1j-KH-34M">
                                 <rect key="frame" x="16" y="208" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="40j-i4-SPO"/>
@@ -137,34 +146,49 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="BFe-OT-0ME"/>
                                     <constraint firstAttribute="width" constant="49" id="PPB-sI-r8T"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="bedtimeTapped:" destination="2lt-vV-Z9v" eventType="valueChanged" id="RsU-YH-WY7"/>
+                                </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vcm-BX-gN2">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vcm-BX-gN2">
                                 <rect key="frame" x="16" y="296" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="JiP-oC-VKG"/>
                                     <constraint firstAttribute="height" constant="31" id="RRz-dX-tM5"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="nineTapped:" destination="2lt-vV-Z9v" eventType="valueChanged" id="0yS-if-pTP"/>
+                                </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5a9-1H-jo0">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5a9-1H-jo0">
                                 <rect key="frame" x="16" y="335" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="06B-iI-NY1"/>
                                     <constraint firstAttribute="width" constant="49" id="RBM-bN-wef"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="twoTapped:" destination="2lt-vV-Z9v" eventType="valueChanged" id="Pte-5X-kvM"/>
+                                </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vvC-yS-fkG">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vvC-yS-fkG">
                                 <rect key="frame" x="16" y="374" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="aRJ-qA-iZh"/>
                                     <constraint firstAttribute="height" constant="31" id="hob-OK-r3U"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="sevenTapped:" destination="2lt-vV-Z9v" eventType="valueChanged" id="GLB-0r-5Np"/>
+                                </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yY-vV-CDj">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2yY-vV-CDj">
                                 <rect key="frame" x="16" y="413" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="gdX-u3-NcO"/>
                                     <constraint firstAttribute="width" constant="49" id="hPV-z0-pzA"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="elevenTapped:" destination="2lt-vV-Z9v" eventType="valueChanged" id="mCd-Np-eHc"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bedtime" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fU-H7-XMr">
                                 <rect key="frame" x="92" y="213" width="64" height="21"/>
@@ -211,6 +235,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8K-zB-pFm">
+                                <rect key="frame" x="16" y="267" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OWm-Gs-eHc"/>
+                                    <constraint firstAttribute="width" constant="200" id="shf-Bo-u7o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -245,16 +279,28 @@
                             <constraint firstItem="f1j-KH-34M" firstAttribute="leading" secondItem="h2s-LJ-zUH" secondAttribute="leadingMargin" id="ksY-EK-sXG"/>
                             <constraint firstItem="Vcm-BX-gN2" firstAttribute="top" secondItem="f1j-KH-34M" secondAttribute="bottom" constant="57" id="mXC-c8-LtN"/>
                             <constraint firstItem="wYs-5O-Mmv" firstAttribute="centerY" secondItem="yAN-Jw-2c0" secondAttribute="centerY" id="nJT-dP-EKA"/>
+                            <constraint firstItem="T8K-zB-pFm" firstAttribute="leading" secondItem="h2s-LJ-zUH" secondAttribute="leadingMargin" id="ob9-7O-Dpw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jJ6-eg-vWJ" secondAttribute="trailing" id="onQ-E2-tcS"/>
                             <constraint firstItem="z8i-oo-dRa" firstAttribute="leading" secondItem="h2s-LJ-zUH" secondAttribute="leadingMargin" id="pIm-8f-Xm4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Mse-gE-uCz" secondAttribute="trailing" id="s8P-i8-XDR"/>
                             <constraint firstItem="ENG-Dk-bzb" firstAttribute="top" secondItem="phy-Xr-NIo" secondAttribute="bottom" constant="27" id="sen-zI-kAj"/>
                             <constraint firstItem="vvC-yS-fkG" firstAttribute="leading" secondItem="h2s-LJ-zUH" secondAttribute="leadingMargin" id="snm-Ty-qvA"/>
+                            <constraint firstItem="Vcm-BX-gN2" firstAttribute="top" secondItem="T8K-zB-pFm" secondAttribute="bottom" constant="8" id="sw9-H0-KK2"/>
                             <constraint firstItem="Mse-gE-uCz" firstAttribute="centerY" secondItem="vvC-yS-fkG" secondAttribute="centerY" id="yrs-SE-X5d"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Track" id="Kpt-f0-5wh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="afternoonSwtich" destination="yAN-Jw-2c0" id="MKQ-Sz-WzZ"/>
+                        <outlet property="bedtimeSwtich" destination="f1j-KH-34M" id="dM7-9p-kgq"/>
+                        <outlet property="elevenSwtich" destination="2yY-vV-CDj" id="1zR-Gh-Qnd"/>
+                        <outlet property="eveninigSwitch" destination="z8i-oo-dRa" id="Inx-WV-QgU"/>
+                        <outlet property="morningSwitch" destination="ENG-Dk-bzb" id="5Ns-Sx-3HW"/>
+                        <outlet property="nineSwitch" destination="Vcm-BX-gN2" id="d6j-JH-VXU"/>
+                        <outlet property="sevenSwtich" destination="vvC-yS-fkG" id="M2N-hE-vb3"/>
+                        <outlet property="twoSwitch" destination="5a9-1H-jo0" id="NGZ-AU-tdI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1o-p9-Njl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
