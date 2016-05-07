@@ -10,6 +10,8 @@ import UIKit
 
 class EditViewController: UIViewController {
 
+    var newMed = Medicine()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
